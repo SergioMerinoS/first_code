@@ -1,36 +1,41 @@
 * {
-    box-sizing: border-box;
-  }
-  .menu {
-    float:left;
-    width:20%;
-    text-align:center;
-  }
-  .menu a {
-    background-color:#e5e5e5;
-    padding:8px;
-    margin-top:7px;
-    display:block;
-    width:100%;
-    color:black;
-  }
-  .main {
-    float:left;
-    width:60%;
-    padding:0 20px;
-  }
-  .right {
-    background-color:#e5e5e5;
-    float:left;
-    width:20%;
-    padding:15px;
-    margin-top:7px;
-    text-align:center;
-  }
+  box-sizing: border-box;
+  font-family: 'Teko', sans-serif;
+  font-size: 18px;
+}
+
+body {
+  margin: 0;
+
+}
+
+/* Style the header */
+.header {
+  background-color: rgb(34, 4, 145);
+  padding: 20px;
+  text-align: center;
+  height: 50vh;
   
-  @media only screen and (max-width:620px) {
-    /* For mobile phones: */
-    .menu, .main, .right {
-      width:100%;
-    }
+}
+
+
+/* Create three equal columns that floats next to each other */
+.column {
+  float: left;
+  width: 100%;
+  padding: 20px 20% ; /*=> "padding:0% 20% 0% 20%"*/
+}
+
+/* Clear floats after the columns */
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+/* Responsive layout - makes the three columns stack on top of each other instead of next to each other */
+@media screen and (max-width:600px) {
+  .column {
+    width: 100%;
   }
+}
