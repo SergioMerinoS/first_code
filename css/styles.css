@@ -1,7 +1,6 @@
 * {
     box-sizing: border-box;
     font-family: 'Teko', sans-serif;
-    font-size: 18px;
 }
 
 body {
@@ -12,9 +11,14 @@ body {
 /* Style the header */
 
 .header {
-    background-color: rgb(34, 4, 145);
-    padding: 20px;
+    background-image: url('../img/pexels-photo-159888.jpeg');
+    background-size: cover;
+    /*tamaño de foto*/
+    background-attachment: fixed;
+    /*fondo fijo*/
+    padding: 10% 20px;
     text-align: center;
+    color: white;
 }
 
 .header h1 {
@@ -28,15 +32,15 @@ body {
 
 /* Create three equal columns that floats next to each other */
 
-.column {
+.one-column {
     float: left;
     width: 100%;
     padding: 20px 20%;
     /*=> "padding:0% 20% 0% 20%"*/
 }
 
-.column h2 {
-    color: green;
+.one-column h1,
+.one-column h2 {
     text-align: center;
 }
 
@@ -49,19 +53,29 @@ body {
     clear: both;
 }
 
-.gallery {
+.two-column {
+    padding: 20px;
+    float: left;
+    width: 50%;
+}
+
+.three-column {
     padding: 20px;
     float: left;
     width: 33.33%;
 }
 
-.gallery img {
+.three-column img {
     width: 100%;
 }
 
-.gallery .desc {
-    padding: 15px;
+.three-column .desc {
+    padding: 10px;
     text-align: center;
+}
+
+.cadetblue {
+    background-color: cadetblue;
 }
 
 
