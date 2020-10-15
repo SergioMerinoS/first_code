@@ -1,6 +1,6 @@
 * {
     box-sizing: border-box;
-    font-family: 'Teko', sans-serif;
+    font-family: 'Playfair Display', serif;
 }
 
 body {
@@ -72,6 +72,26 @@ body {
 .three-column .desc {
     padding: 10px;
     text-align: center;
+}
+
+.four-column {
+    padding: 20px;
+    float: left;
+    width: 25%;
+}
+
+#footerA p {
+    color: white;
+}
+
+#footerA {
+    background-color: #21252995;
+}
+
+#footerB {
+    background-color: #212529;
+    text-align: center;
+    color: #868e96;
 }
 
 .cadetblue {
